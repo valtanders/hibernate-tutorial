@@ -6,7 +6,6 @@ import org.hibernate.cfg.Configuration;
 
 import com.bruno.hibernate.demo.entity.Instructor;
 import com.bruno.hibernate.demo.entity.InstructorDetail;
-import com.bruno.hibernate.demo.entity.Student;
 
 public class CreateDemo {
 

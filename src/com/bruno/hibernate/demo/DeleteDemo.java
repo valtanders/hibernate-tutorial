@@ -6,7 +6,6 @@ import org.hibernate.cfg.Configuration;
 
 import com.bruno.hibernate.demo.entity.Instructor;
 import com.bruno.hibernate.demo.entity.InstructorDetail;
-import com.bruno.hibernate.demo.entity.Student;
 
 public class DeleteDemo {
 
@@ -24,8 +23,8 @@ public class DeleteDemo {
 			session.beginTransaction();
 
 			// get instructor by primary key / id
-			Instructor theInstructor = session.get(Instructor.class, 1);
-			System.out.println(theInstructor);
+			Instructor theInstructor = session.get(Instructor.class, 3);
+			System.out.println("Found an Instructor: " +theInstructor);
 
 			// delete the intrusctor
 			if (theInstructor != null) {
